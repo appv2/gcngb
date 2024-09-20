@@ -18,7 +18,7 @@ const Nav = React.memo(function Nav() {
               <h3>
                 <span style={{ color: "#096a34" }}>Genie</span>
                 <span style={{ color: "#3c4365" }}>Merge</span>
-                <span className="dot"></span>
+                
               </h3>
             </Link>
             <div className={`${styles.nav_action}`}>
