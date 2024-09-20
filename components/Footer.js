@@ -28,34 +28,8 @@ const Footer = React.memo(function Footer() {
             </Link>
           </div>
         </div>
-/*
-        <div className="row">
-          <div className="col-lg-12 d-flex justify-content-center">
-            <ul className={`${styles.footer_menu}`}>
-              <li>
-                <Link href="/about" prefetch={false}>
-                  {t("common:about")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy-policy" prefetch={false}>
-                  {t("common:privacy")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms-of-use" prefetch={false}>
-                  {t("common:terms")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/contacts" prefetch={false}>
-                  {t("common:contact")}
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-*/
+
+
         <div className="row">
           <div className="col-lg-12 py-3 d-flex justify-content-center">
             <p className={`text-center ${styles.copyright}`}>
