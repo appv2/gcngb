@@ -16,8 +16,8 @@ const Nav = React.memo(function Nav() {
           <div className="container d-flex justify-content-between">
             <Link href="/" className={`${styles.logo}`}>
               <h3>
-                <span style={{ color: "#7d64ff" }}>PDF</span>
-                <span style={{ color: "#2d3748" }}>Merger</span>
+                <span style={{ color: "#7d64ff" }}>Genie</span>
+                <span style={{ color: "#2d3748" }}>Merge</span>
                 <span className="dot"></span>
               </h3>
             </Link>
