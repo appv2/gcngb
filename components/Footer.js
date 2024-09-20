@@ -28,7 +28,7 @@ const Footer = React.memo(function Footer() {
             </Link>
           </div>
         </div>
-
+/*
         <div className="row">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul className={`${styles.footer_menu}`}>
@@ -55,7 +55,7 @@ const Footer = React.memo(function Footer() {
             </ul>
           </div>
         </div>
-
+*/
         <div className="row">
           <div className="col-lg-12 py-3 d-flex justify-content-center">
             <p className={`text-center ${styles.copyright}`}>
