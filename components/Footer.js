@@ -23,7 +23,7 @@ const Footer = React.memo(function Footer() {
               <h3>
                 <span style={{ color: "#096a34" }}>Genie</span>
                 <span style={{ color: "#3c4365" }}>Merge</span>
-                <span className="dot"></span>
+              
               </h3>
             </Link>
           </div>
@@ -61,7 +61,7 @@ const Footer = React.memo(function Footer() {
             <p className={`text-center ${styles.copyright}`}>
               Copyright &copy;{" "}
               <Link href="/" target="_blank">
-                Connected by GenieBids 2025
+                Connected 2024-2025
               </Link>
               . {t("common:all_rights")}
             </p>
