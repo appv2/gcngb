@@ -1,0 +1,94 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+  position: relative;
+  border-bottom: 1px solid var(--secondary);
+  text-align: start;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px !important;
+  font-style: normal !important;
+}
+
+.navigation h4 {
+  font-weight: 500;
+}
+
+.navigation h4,
+.navigation h3 {
+  font-size: 16px !important;
+}
+
+.navigation ul {
+  padding-left: 0rem;
+  margin-bottom: 0rem;
+}
+
+.nav_action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn_primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  direction: ltr;
+}
+
+.btn_primary span {
+  margin-right: 5px !important;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .navigation {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .navigation {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media (max-width: 365px) {
+  .btn_primary {
+    padding: 0.4rem 1rem;
+  }
+}
+
+.logo h3 {
+  display: flex;
+  color: #2d2b3a;
+  font-size: 1.75rem !important;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: baseline;
+  margin-bottom: 0px;
+  direction: ltr;
+}

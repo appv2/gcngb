@@ -1,0 +1,382 @@
+.preview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  min-height: 149px;
+  user-select: none;
+  background-color: transparent;
+  margin-bottom: 40px;
+  margin-bottom: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .preview {
+    width: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .preview {
+    width: 33%;
+  }
+}
+
+@media (min-width: 992px) {
+  .preview {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .preview {
+    width: 20%;
+  }
+}
+
+.file {
+  margin: 4px;
+  width: 168px;
+  height: 214px;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #f6f6f8;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+}
+
+.file:hover {
+  background-color: rgb(255, 255, 255);
+  transition: all 0.4s linear;
+}
+.file:hover .file_actions {
+  display: flex;
+}
+
+.file_actions {
+  top: 5px;
+  right: 5px;
+  position: absolute;
+  display: none;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.file_btn {
+  padding: 3px;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  text-align: center;
+  background-color: #f6f6f8;
+  margin-left: 4px;
+  z-index: 1030;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.file_btn:active {
+  color: var(--text-primary);
+}
+
+.file_canvas {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: #fff;
+}
+
+.file:hover .file_canvas:after {
+  opacity: 0.6;
+}
+.file_canvas:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 0;
+}
+.file_canvas canvas {
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background-image: none;
+}
+
+.file_canvas > div,
+.file_canvas canvas {
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.file_canvas > div {
+  height: 100%;
+  width: 100%;
+}
+
+.landscape canvas {
+  max-width: 145px;
+  max-height: 107px;
+}
+
+.portrait canvas {
+  max-height: 145px;
+  max-width: 107px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .file_btn svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .landscape canvas {
+    max-width: 100px;
+    max-height: 75px;
+  }
+  .portrait canvas {
+    max-height: 100px;
+    max-width: 75px;
+  }
+  .file {
+    width: 120px;
+    height: 165px;
+  }
+
+  .hide_btn_on_mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  .file_btn {
+    border-radius: 16px;
+  }
+
+  .landscape canvas {
+    max-width: 90px;
+    max-height: 70px;
+  }
+  .portrait canvas {
+    max-height: 90px;
+    max-width: 70px;
+  }
+  .file {
+    width: 100px;
+    height: 155px;
+  }
+}
+
+.file_info {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 1440px) {
+  .file_info {
+    height: 28px;
+  }
+}
+.file_info_name {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 6px 8px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  z-index: 99;
+}
+@media (max-width: 1440px) {
+  .file_info_name {
+    padding: 4px;
+  }
+}
+
+.selected .file_info_name {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.selected .file {
+  background-color: #7d64ff3b;
+}
+
+.card {
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.card_dragged {
+  position: absolute;
+  transform-origin: bottom left;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.35);
+}
+
+.file_image {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background: #fff;
+}
+
+.file:hover .file_image:after {
+  opacity: 0.6;
+}
+
+.awa_no_margin {
+  padding: 0 !important;
+}
+.awa_small_margin {
+  padding: 2px !important;
+}
+.awa_big_margin {
+  padding: 5px !important;
+}
+
+.awa_landscape {
+  transform: rotate(90deg);
+  max-width: 145px;
+  max-height: 117px;
+}
+
+.awa_portrait {
+  transform: rotate(0deg);
+  max-height: 145px;
+  max-width: 117px;
+}
+
+.awa_fit.awa_portrait,
+.awa_fit.awa_landscape {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+
+.awa_a4.awa_portrait {
+  width: 107px;
+  height: 145px;
+}
+
+.awa_a4.awa_landscape {
+  width: 145px;
+  height: 107px;
+}
+
+.awa_letter.awa_portrait {
+  width: 117px;
+  height: 145px;
+}
+
+.awa_letter.awa_landscape {
+  width: 145px;
+  height: 117px;
+}
+
+.awa_a4:after,
+.awa_letter:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .awa_landscape {
+    max-width: 100px;
+    max-height: 75px;
+  }
+  .awa_portrait {
+    max-height: 100px;
+    max-width: 75px;
+  }
+
+  .awa_a4.awa_portrait {
+    width: 70px;
+    height: 100px;
+  }
+
+  .awa_a4.awa_landscape {
+    width: 100px;
+    height: 70px;
+  }
+
+  .awa_letter.awa_portrait {
+    width: 75px;
+    height: 100px;
+  }
+
+  .awa_letter.awa_landscape {
+    width: 100px;
+    height: 75px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  .awa_landscape {
+    max-width: 90px;
+    max-height: 70px;
+  }
+  .awa_portrait {
+    max-height: 90px;
+    max-width: 70px;
+  }
+
+  .awa_a4.awa_portrait {
+    width: 65px;
+    height: 90px;
+  }
+
+  .awa_a4.awa_landscape {
+    width: 90px;
+    height: 65px;
+  }
+
+  .awa_letter.awa_portrait {
+    width: 70px;
+    height: 90px;
+  }
+
+  .awa_letter.awa_landscape {
+    width: 90px;
+    height: 70px;
+  }
+}

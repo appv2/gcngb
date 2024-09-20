@@ -1,0 +1,46 @@
+.share_btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--text-primary);
+  transition: all 0.2s linear;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.share_btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  transform: rotate(360deg);
+}
+
+.share_btn svg {
+  vertical-align: unset !important;
+}
+
+.share_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.share_buttons {
+  margin: 20px;
+}
+
+.share_section {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+
+.share_text {
+  display: flex;
+  flex-direction: column;
+}

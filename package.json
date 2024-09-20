@@ -1,0 +1,38 @@
+{
+  "name": "mergepdf",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MergePDF Next.js Application",
+  "author": "dosana.author@proton.me | Official Source code available at: https://codecanyon.net/item/pdf-merger-merge-rotate-organize-delete-preview-pdf-all-in-one-react-nextjs-web-application/42741922",
+  "license": "MergePDF © 2023 is licensed under Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "cacheDirectories": [
+    "node_modules/",
+    ".next/cache/"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^13.4.5",
+    "next-i18next": "^11.0.0",
+    "pdf-lib": "^1.17.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-bootstrap-icons": "^1.10.3",
+    "react-device-detect": "^2.2.3",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dnd-touch-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-pdf": "^7.1.2",
+    "react-selecto": "^1.22.6",
+    "react-toastify": "^9.1.3"
+  },
+  "devDependencies": {
+    "eslint": "8.15.0",
+    "eslint-config-next": "^13.4.5"
+  }
+}

@@ -1,0 +1,10 @@
+# The .dockerignore file specifies files and directories that should be excluded from the build context when building a Docker image. 
+# The build context is the set of files and directories located in the same directory as the Dockerfile, which are sent to the Docker daemon for building the image.
+# Files to ignore while copying to the image file system
+.next
+node_modules
+package-lock.json
+Documentation.pdf
+README.md
+.git
+.gitignore
