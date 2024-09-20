@@ -231,7 +231,7 @@ const MergePDFPage = () => {
     <>
       <Head>
         {/* Anything you add here will be added to this page only */}
-        <title>Merge PDF Files | Best PDF Files Merger Online</title>
+        <title>GenieMerge | Combine Your PDF Files</title>
         <meta name="description" content="description" />
         <meta name="Keywords" content="Keywords" />
         {/* You can add your canonical link here */}
