@@ -17,7 +17,7 @@ const Nav = React.memo(function Nav() {
             <Link href="/" className={`${styles.logo}`}>
               <h3>
                 <span style={{ color: "#096a34" }}>Genie</span>
-                <span style={{ color: "#3c4365" }}>Merge</span>
+                <span style={{ color: "#3c4365" }}>Doc</span>
                 
               </h3>
             </Link>
