@@ -11,7 +11,7 @@ const useToolsData = () => {
       icon: <FileEarmarkPdf />,
       acceptedInputMimeType: "application/pdf",
       acceptedInputFileMaxSize: 26214400, //25MB = 25600 KB (in binary) = 26214400 B (in binary),
-      newFileNameSuffix: "MergedPDF.pdf",
+      newFileNameSuffix: "GenieDoc.pdf",
     },
   };
 
